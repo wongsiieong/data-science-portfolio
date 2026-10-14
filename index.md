@@ -17,6 +17,8 @@ Data Science student at the University of Macau, majoring in applying Python, pa
 
 ![Violin plots of salary and working hours by education level](https://raw.githubusercontent.com/wongsiieong/data-science-project/main/violin_salary_hours.png)
 
+![Treemap showing education groups proportion](https://raw.githubusercontent.com/wongsiieong/data-science-project/main/treemap_education.png)
+
 **Key finding**: Workers with a Bachelor's degree or higher generally show a higher annual salary distribution, while higher education groups also tend to have a narrower, more stable range of weekly working hours. The treemap in the repository shows how the sample is distributed across the five education groups.
 
 **Repository**: [data-science-project](https://github.com/wongsiieong/data-science-project)
