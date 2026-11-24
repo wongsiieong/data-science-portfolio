@@ -35,3 +35,33 @@ This is observational data, so the plots show correlation rather than causation.
 
 ### Status
 Completed
+
+## Team Project: Crime and House Prices in London Boroughs
+
+### Research Question
+In London, do boroughs with a higher recorded crime rate have lower average house prices? The analysis compares the 32 London boroughs using 2016–2018 means.
+
+### My Role
+This is a six-member team project (CISC7204 Class A, Team 05). I served as scribe and liaison: I assembled the interpretation from each member's analysis, prepared meeting minutes and recordings, and checked captions. The data processing, modelling, and code were produced jointly by the team.
+
+### Approach
+The team averaged monthly house prices to calendar years, summed crime counts, and computed a crime rate per 1,000 residents. Association was measured with Spearman's rank correlation, and a partial Spearman correlation residualised both rank series on median earnings. Tools: Python, pandas, NumPy, SciPy, and Matplotlib.
+
+### Visualization
+![Crime rate against average house price for London boroughs](images/team/crime_vs_house_price.png)
+
+![Spearman correlations before and after earnings are partialled out](images/team/earnings_on_both_sides.png)
+
+### Findings
+- The crime rate and average price have a Spearman ρ of **0.47** (n = 32, p = 0.007). The association is positive: boroughs with more recorded crime per resident tend to have higher prices, not lower ones.
+- Median earnings move with both price (ρ = 0.51, p = 0.003) and the crime rate (ρ = 0.59, p = 3.9e-04). After earnings are partialled out, the crime–price correlation falls to **0.24**.
+- The raw crime count, without population adjustment, only reaches ρ = 0.25 (p = 0.164).
+
+### Limitation
+The result describes 32 boroughs in 2016–2018. It does not show that crime causes high prices, and it does not describe a street or a household. Earnings sit on both sides of the comparison, so the positive association is not a clean measure of crime's effect.
+
+### Project Repository
+[View the team repository](https://github.com/DeoxysD/cisc7204-london-boroughs)
+
+### Status
+Completed
