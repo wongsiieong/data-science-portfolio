@@ -42,7 +42,15 @@ Completed
 In London, do boroughs with a higher recorded crime rate have lower average house prices? The analysis compares the 32 London boroughs using 2016–2018 means.
 
 ### My Role
-This is a six-member team project (CISC7204 Class A, Team 05). I served as scribe and liaison: I assembled the interpretation from each member's analysis, prepared meeting minutes and recordings, and checked captions. The data processing, modelling, and code were produced jointly by the team.
+I was the scribe and liaison for Team 05, and my main responsibility was the written interpretation. Each member reported their own analysis part, and I assembled these paragraphs into one coherent interpretation that follows the notebook in the same order as its cells: the reader moves from the baseline scatter and correlations, through the earnings adjustment and robustness checks, to the within-borough change, without the narrative jumping ahead of the results. I checked that every statement in the write-up matched a number the clean-kernel rerun still printed, and kept the wording at the level of association rather than causation. Beyond the interpretation, I prepared the meeting minutes, kept the video recordings, did the caption pass, and assembled the forum package. As liaison, I circulated the draft and collected each owner's review of their own paragraph. The data processing, modelling, and code were produced jointly by the team; my role was to turn those results into a clear, consistent write-up.
+
+### Team Members and Division of Work
+- **FAN ZI QIAN** (MC63582) — Coordinator, tracker: aggregation, baseline correlations, Figure 1, fitted line; coverage note, sample rules, baseline and closing paragraphs.
+- **WONG SI IEONG** (MC632743) — Scribe, liaison: interpretation assembled from each owner's paragraph; minutes, video recordings, caption pass. *(Detailed in My Role above.)*
+- **HE YING** (MC631173) — Analyst, reviewer: earnings-adjusted association and the residual figure; earnings join, missing years, filled rubric.
+- **LI LU SHI** (MC639271) — Robustness, references, packaging: analysis without Westminster, count versus rate; reference list, new-row check, submission file.
+- **WANG WEI CHENG** (MC644348) — Reporter: within-borough changes and the change figure; year-pair rule, checklist, introductory video.
+- **LI SI WEI** (MC638482) — Developer: notebook pipeline and one clean-kernel rerun; correlation table in that notebook.
 
 ### Approach
 The team averaged monthly house prices to calendar years, summed crime counts, and computed a crime rate per 1,000 residents. Association was measured with Spearman's rank correlation, and a partial Spearman correlation residualised both rank series on median earnings. Tools: Python, pandas, NumPy, SciPy, and Matplotlib.
